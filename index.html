@@ -1,32 +1,102 @@
 <!-- Unit 5 Project
 Requirements
-[  ] <div> and <span>
-[  ] height: and width:
-[  ] margin: and padding: 
-[  ] Three Images
+[ x ] <div> and <span>
+[x ] height: and width:
+[x  ] margin: and padding: 
+[  x] Three Images
 
+
+margin and padding on images 
+gradient background
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Flexbox
+[ no Feature 1 - Flexbox
 [ no ] Feature 2 - Flip Card
 [ no ] Feature 3 - Navbar
 [ no ] Feature 4 - Shaking Animation
-[ no ] Feature 5 - Gradient Background
+[ yes ature 5 - Gradient Background
 [ no ] Feature 6 - Spotify Playlist
 -->
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Unit 5 Project</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background-image: linear-gradient(
+        to bottom right, 
+          #0e4710, 
+          #1b691e, 
+          #2a872d, 
+          #1b691e,
+          #0e4710);}
+      .invited {
+        color: rgb(201, 35, 20);
+      }
+      .christmas {
+        color: rgb(143, 35, 16);
+      }
 
-<head>
-  <title>Unit 5 Project</title>
-  <meta charset="utf-8">
-  <style>
-
-  </style>
-</head>
-<body>
-
- 
-
-</body>
+      .info {
+        background: rgb(48, 125, 20);
+        width: 70%;
+        height: 180px;
+        overflow-y: auto;
+      }
+      .pic {
+        width: 70%;
+      }
+      
+    
+      div { 
+      background: rgb(69, 105, 64);
+      }
+      .photo {
+        width: 200px;
+        margin: 20px; 
+        border: 5px solid;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>you're <span class="invited"> invited ! </span> 💌</h1>
+    <h5>
+      mazzella family
+      <span class="christmas">christmas</span>
+      function
+    </h5>
+    <div class="photo-gallery">
+    
+    <img class="photo"
+      src="https://i.pinimg.com/1200x/7e/fb/cf/7efbcf5416f5bc099799920fcaafbe62.jpg"
+      width="200"
+    />
+    <img class="photo"
+      src="https://64.media.tumblr.com/4a05de7e30184772222629cee64510e2/380f95df79deada5-69/s540x810/dcf7904867026c8d13c7164d241513dcf5bc7df4.jpg"
+      width="200"
+    />
+    <img class="photo" src="https://i.pinimg.com/736x/60/17/2b/60172b52bfddf061a056dd016c432c01.jpg" width="200" />
+    <img class="photo" src="https://64.media.tumblr.com/2ce03b647e8141b5148804bf7b0f7629/380f95df79deada5-34/s400x600/283b951847cfa6e045c0d3266b56d2371484486a.jpg" width="300" />
+   </div>
+    
+    <div class="info">
+      <p>
+        we <em>(finally) </em> had the time to organize the house... let the
+        festivities begin! were ecxcited to announce that we're doing a classic
+        family christmas again.
+      </p>
+      <div>
+        events include: chirtsmas dinner, movies, gift exchange, white elephant,
+        and much more.
+      </div>
+      bring yourself, 3 days worth of clothes, your most festive pjs and
+      whatever gifts you'd like to gift!
+      <div>
+        remember to leave room in your luggage for anything youll be bringing
+        home!
+      </div>
+    </div>
+  </body>
 </html>
